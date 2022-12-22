@@ -1,0 +1,9 @@
+{
+  "cpu": {
+    "fqbn": "esp32:esp32:esp32cam",
+    "name": "AI Thinker ESP32-CAM",
+    "type": "serial"
+  },
+  "secrets": [],
+  "included_libs": []
+}
