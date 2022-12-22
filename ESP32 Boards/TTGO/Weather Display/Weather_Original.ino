@@ -22,7 +22,8 @@ TFT_eSPI tft = TFT_eSPI();       // Invoke custom library
 const int pwmFreq = 5000;
 const int pwmResolution = 8;
 const int pwmLedChannelTFT = 0;
-const int Landscape = 0; 
+const int Landscape = 1;
+const int Portrait = 0;
 
 
 const char* ssid     = "TALKTALKB032AA";       ///EDIIIT
@@ -93,6 +94,7 @@ void setup(void) {
   tft.println("WiFi connected.");
   tft.println("IP address: ");
   tft.println(WiFi.localIP());
+  tst.setRotation(Portrait);
   delay(3000);
   tft.setTextColor(TFT_WHITE,TFT_BLACK);  tft.setTextSize(1);
     tft.fillScreen(TFT_BLACK);
