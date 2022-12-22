@@ -22,7 +22,7 @@ TFT_eSPI tft = TFT_eSPI();       // Invoke custom library
 const int pwmFreq = 5000;
 const int pwmResolution = 8;
 const int pwmLedChannelTFT = 0;
-const int Landscape = 1;
+const int Landscape = 0; 
 
 
 const char* ssid     = "TALKTALKB032AA";       ///EDIIIT
