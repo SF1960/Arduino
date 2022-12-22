@@ -1,0 +1,65 @@
+:Author: ard12sgf1960
+:Email: {AuthorEmail}
+:Date: 24/11/2022
+:Revision: version#
+:License: Public Domain
+
+= Project: {SerialToSerialBT}
+
+This project connects to a BT device and sends and receives data
+It can also control the INBUILT_LED
+The code needs to receive text to control the LED
+Send Led On, Led Off, Toggle to the ESP32 to control the LED
+
+== Step 1: Code Installation
+Upload the code to the ESP32 by connecting a USB cable between the device and Project
+When the PC is attempting to connect you may need to press the BOOT button a number of times
+Once the downloas starts the button can be released
+
+== Step 2: Android App Installation
+Load the Android App Serial Bluetooth App
+
+== Step 3: Condigure the App
+The app has a row of function buttons that you will need to reconfigure
+[M1][M2][M3][M4][M5][M6]
+Long press on a function key and change the... 
+Name to Led On and the Value to Led On and press tick
+Name to Led Off and Value to Led Off and press tick
+Name to Toggle and Value to Toggle and press tick
+
+== Step 4: function
+Press the new function keys to send the data to the PC
+The code will turn on and off the LED and print to the monitor
+
+== Step 5: Assemble the circuit
+
+No assembly required
+
+=== Folder structure
+....
+ SerialToSerial                => Arduino sketch folder
+  |-sketch123.ino              => main Arduino file
+  |-ReadMe.adoc                => this file
+....
+
+=== License
+This project is released under a {License} License.
+
+=== Contributing
+To contribute to this project please contact ard12sgf1960 https://id.arduino.cc/ard12sgf1960
+
+=== BOM
+Add the bill of the materials you need for this project.
+
+|===
+| ID | Part name      | Part number | Quantity
+| R1 | 10k Resistor   | 1234-abcd   | 10
+| L1 | Red LED        | 2345-asdf   | 5
+| A1 | Arduino Zero   | ABX00066    | 1
+|===
+
+
+=== Help
+This document is written in the   , a markup language to describe documents.
+If you need help you can search the http://www.methods.co.nz/asciidoc[AsciiDoc homepage]
+or consult the http://powerman.name/doc/asciidoc[AsciiDoc cheatsheet]
