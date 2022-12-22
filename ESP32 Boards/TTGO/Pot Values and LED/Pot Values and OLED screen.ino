@@ -70,13 +70,13 @@ void setup() {
   // display image
   tft.pushImage(20,40,96,96,knob_icon);
 
-  tft.setFreeFont(&Rock_Salt_Regular_20);
+  //tft.setFreeFont(&Rock_Salt_Regular_20);
 
   // configure the screen
   tft.setCursor(20, 20, 2);
   tft.setTextColor(TFT_WHITE,TFT_BLACK);  tft.setTextSize(1);
-  tft.drawString("Potentiometer",0,0);
-  //tft.println("POTENTIOMETER");
+  //tft.drawString("Potentiometer",0,0);
+  tft.println("POTENTIOMETER");
   tft.drawLine(20, 40, 120, 40, TFT_GREEN);
 
   tft.setCursor(25, 220, 2);
@@ -128,3 +128,4 @@ void loop() {
 
   delay(100);  // delay in between reads for stability
 }
+
